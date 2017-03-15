@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+}
+*:focus {
+    outline: none;
+}
+body{
+    background: #009688;
+}
+.box{
+    background: white;
+    padding: 2px 14px 9px 14px;
+    box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.1);
+    margin-top: 50%;
+    transition: all 0.8s ease;
+}
+.box h3{
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color:#009688;
+    -webkit-font-smoothing: antialiased;
+}
+.box .form-control{
+    border-radius: 0;
+}
+.box .btn{
+    border-radius: 1px;
+    
+    outline-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+.box .btn:hover {
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.04), 0 10px 32px 0 rgba(0,0,0,0.19);
+}
+.box btn:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+.box .btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+.box .btn:focus{
+    outline:none;
+}
+#setupForm{
+    margin-top:20px;
+}
+#setupForm h4{
+    text-align: center;
+}
+#setupForm p{
+    font-style: italic;
+}
+.alert {
+    padding: 7px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 0px;
+}
+.alert-danger {
+    color: #a94442;
+    background-color: #ececec;
+    border-left:4px solid #dc3232;
+}
+.divider{
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+/* ===================================================== */
